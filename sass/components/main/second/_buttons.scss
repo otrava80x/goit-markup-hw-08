@@ -1,0 +1,32 @@
+.projects__button-list {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-left: -4px;
+  margin-right: -4px;
+
+  @media screen and (max-width: 767px) {
+    margin-top: -7px;
+    margin-bottom: -7px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
+}
+
+.buttons__item {
+  margin-left: 4px;
+  margin-right: 4px;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+}

@@ -1,0 +1,163 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $secondary-bg-color;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
+.footer__container {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+.footer__wrap {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+}
+
+.footer-nav {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 70px;
+  }
+}
+
+.footer-nav__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.address {
+  font-style: normal;
+}
+
+.address__link {
+  @extend %link;
+
+  display: block;
+  margin-bottom: 8px;
+
+  line-height: 1.71;
+  color: $primary-white-color;
+}
+
+.address__contact {
+  @extend %link;
+
+  display: block;
+
+  line-height: 1.71;
+  color: $primary-contacts-color;
+
+  &:nth-child(2) {
+    margin-bottom: 8px;
+  }
+}
+
+.footer__title {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $primary-white-color;
+}
+
+.footer__icons-list {
+  @extend %list;
+  display: inline-flex;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.footer__icons-item {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.footer__icon {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  transition: $timing-function;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.15);
+    background-color: $accent-color;
+  }
+}
+
+.footer__icon-instagram {
+  background-image: url('../images/icon/social/instagram.svg');
+}
+
+.footer__icon-twitter {
+  background-image: url('../images/icon/social/twitter.svg');
+}
+
+.footer__icon-facebook {
+  background-image: url('../images/icon/social/facebook.svg');
+}
+
+.footer__icon-linkedin {
+  background-image: url('../images/icon/social/linkedin.svg');
+}
+.footer__form {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.footer__input {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  height: 50px;
+  padding: 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $mobile) and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+    margin-right: 12px;
+  }
+}

@@ -1,0 +1,15 @@
+.title {
+  margin-bottom: 30px;
+
+  font-size: 28px;
+  line-height: 1.17;
+  font-weight: 700;
+  text-align: center;
+
+  color: $secondary-text-color;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
